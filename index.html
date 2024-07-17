@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <h1>Do u like me or not</h1>
+        <button id="yes" onclick="handleYes()">Yes</button>
+        <button id="no" onmouseover="handleMouseOver()">No</button>
+        
+    </div>
+    <script>
+        function handleMouseOver(){
+            document.getElementById('no').style.position='relative';
+            document.getElementById('no').style.left=Math.random()*400+'px';
+            document.getElementById('no').style.right=Math.random()*200+'px';
+            document.getElementById('no').style.top=Math.random()*200+'px';
+            document.getElementById('no').style.bottom=Math.random()*200+'px';
+
+        }
+        function handleYes(){
+            alert("thank u");
+        }
+    </script>
+</body>
+</html>
